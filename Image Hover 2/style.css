@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+}
+.div1 {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-image: url(image.jpg);
+    transition: ease 1s;
+    position: relative;
+}
+img{
+height: 100%;
+width: 100%;
+transition: ease 1s;
+}
+.div1:after{
+    position: absolute;
+    content: "It's The Image Hover Effect 😊";
+    text-align: center;
+    line-height: 3rem;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transform: translatey(350px);
+    
+
+}
+.div1:hover{
+    transform: translateY(-60px);
+}
+
+

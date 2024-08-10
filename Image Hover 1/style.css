@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 350px;
+    width: 350px;
+   border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+   
+    }
+.div1{
+    transition: ease 1s;
+  
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.div1:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(image2.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-350px);
+    transition: ease 1s;
+
+}
+.div1:hover{
+    transform: translateX(350px);
+}
